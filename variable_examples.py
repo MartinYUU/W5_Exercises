@@ -13,6 +13,8 @@
 # inline code comment, starting with #.
 # 4. Create variables for your own name and the city and state where you were born
 
+
+#made everything a string because there should not be any mathematical operations performed on these values
 customerID = '644381'
 firstName = 'Natalie'
 middleName = 'Alisson'
