@@ -4,6 +4,13 @@
 # You also want to buy 10% more tiles than you need in order to handle chips, breakage, 
 # and mess-ups. How many total boxes will you buy? 
 
+import math
 
-length = 25
-width = 20
+roomLength = 25
+roomWidth = 20
+roomArea = roomLength * roomWidth
+tilesPerBox = 12
+print('Area of the room is', roomArea)
+
+minBoxes = math.ceil((roomArea / tilesPerBox) * 1.1)
+print('A minimum of', minBoxes, 'boxes are needed')
