@@ -9,19 +9,19 @@ major_dict = {'BIOL' : ['Biology', 'Science Bldg, Room 310'],
               'MKT'  : ['Marketing', 'Westly Hall, Room 314'],
               'unknown' : ['Unknown, ']
               }
-
-major_code = input('Enter the code for the major you are looking for: ').upper()
-
+student_name = input('What is your name?: ')
+major_code = input('Enter the code for your major: ').upper()
+print("student Name is: ", student_name)
 match major_code :
     case 'BIOL' :
-        print(major_dict['BIOL'])
+        print('Your major is:', major_dict['BIOL'])
     case 'CSCI' :
-        print(major_dict['CSCI'])
+        print('Your major is:', major_dict['CSCI'])
     case 'ENG'  :
-        print(major_dict['ENG'])
+        print('Your major is:', major_dict['ENG'])
     case 'HIST' :
-        print(major_dict['HIST'])
+        print('Your major is:', major_dict['HIST'])
     case 'MKT'  :
-        print(major_dict['MKT'])
+        print('Your major is:', major_dict['MKT'])
     case other:
-        print(major_dict['unknown'])
+        print('Your major is:', major_dict['unknown'])
